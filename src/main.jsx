@@ -60,7 +60,8 @@ const router = createBrowserRouter(
         </Route>
       </Route>
     </Route>
-  )
+  ),
+  { basename: import.meta.env.BASE_URL }
 );
 
 createRoot(document.getElementById('root')).render(
